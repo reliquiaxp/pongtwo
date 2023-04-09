@@ -1,5 +1,5 @@
 //variáveis da bolinha
-let xBolinha = 650;
+let xBolinha = 600;
 let yBolinha = 200;
 let diâmetro = 20;
 let raio = diâmetro / 2;
@@ -15,7 +15,7 @@ let xRaquete = 3;
 let yRaquete = 150;
 
 //variáveis do oponente
-let xRaqueteOponente = 1290;
+let xRaqueteOponente = 1190;
 let yRaqueteOponente = 150;
 let velocidadeYOponente;
 
@@ -26,7 +26,7 @@ let meusPontos = 0;
 let pontosDoOponente= 0;
 
 //sons do jogo
-let rauqetada;
+let raquetada;
 let ponto;
 let trilha;
 
@@ -37,7 +37,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(1300, 400);
+  createCanvas(1200, 400);
   trilha.loop();
 }
 
@@ -121,13 +121,13 @@ function incluiPlacar(){
   fill(255);
   text(meusPontos, 150, 30);
   fill(color(255, 140, 0));
-  rect(1150, 14, 40, 20);
+  rect(1050, 14, 40, 20);
   fill(255);
-  text(pontosDoOponente, 1170, 30);
+  text(pontosDoOponente, 1070, 30);
     }
 
 function marcaPonto(){
-  if (xBolinha > 1290){meusPontos += 1;
+  if (xBolinha > 1190){meusPontos += 1;
   ponto.play();
   }
   if (xBolinha < 11){pontosDoOponente += 1;
